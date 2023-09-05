@@ -436,6 +436,7 @@ button:focus {
   border-radius: 100%;
   text-align: center;
   box-shadow: 0 8px 30px var(--color-accent);
+  transition: opacity 300ms ease-in;
 }
 
 /* Footer */
