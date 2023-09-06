@@ -4,12 +4,12 @@
 const categories = document.querySelector(".categories");
 const projects = document.querySelectorAll(".project");
 const projectsContainer = document.querySelector(".projects");
-categories.addEventListener("click", (e) => {
-  const filter = e.target.dataset.category;
+categories.addEventListener("click", (event) => {
+  const filter = event.target.dataset.category;
   if (filter == null) {
     return;
   }
-  handleActiveSelection(e.target);
+  handleActiveSelection(event.target);
   filterProjects(filter);
 });
 
